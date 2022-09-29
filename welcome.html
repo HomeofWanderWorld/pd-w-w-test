@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style_original.css">
+    <link rel="icon" type="image/svg" href="img/pd_logo.svg">
+    <script src="https://kit.fontawesome.com/0269452beb.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="media.css"> -->
+    <title>Piano Desk</title>
+</head>
+
+<body>
+<!-- NAVIGATION //////////////////////////////////////////////////////-->
+<div class="nav_container" id="nav_container">
+    
+    <div class="desktop_side">
+        <div class="desktopBanner_hold">
+            <!-- Banner Top -->
+            <div class="desktopbanner_top" id="desktopbanner_top">
+                <div class="h1_bg" id="bannerTitle">
+                    <h3>Desktop</h3 >
+                </div>
+            </div>
+            <!-- Artist/Song IMG -->
+            <div class="DeskTopIMG_hold">
+                <div class="DeskTopArtistIMG" onmouseover= "desktopbanner_change()" onmouseout= "desktopbanner_default()" onclick="desktopBannerClick()">
+                    <i class="bi playListPlay bi-play-circle-fill" id="desktopPlay"></i>
+                    <div class="dtIMG_1" id="dtIMG_1">
+                        <img src="https://yt3.ggpht.com/GXTJDJUETkpBU_tKVo84-KKB8Qo5Lm0cfE_P9UylKfy8BrQax99zqhD41bGKLxAPA5SiKuDBSA=s900-c-k-c0x00ffffff-no-rj" alt="DJ Melza" id="imgSrc"> 
+                    </div>                         
+                </div>
+            </div>
+            <!-- Banner Bottom -->
+            <div class="desktopbanner_bottom" id="desktopbanner_bottom">
+                <div class="artistSongName" id="bannerArtist">
+                    <h3>Freddy K
+                        <!-- <span>.</span> -->
+                    </h3>
+                    <!-- <div class="subtitle"> Freddy K</div> -->
+                </div> 
+            </div>
+        </div>      
+
+            <div class="menu_song">
+                    <li class="songItem">
+                        <!-- <span>01</span> -->
+                            <img src="img/18.jpg" alt="Mellow and Sleazy" class="src">
+                                <h5>
+                                    Presidente Ya Strata
+                                    <div class="subtitle"> Focalistic</div>
+                                </h5>
+                                <i class="bi playListPlay bi-play-circle-fill" id="1"></i>
+                                    <!-- bi-play-fill -->
+                    </li>
+                    <li class="songItem">
+                        <!-- <span>02</span> -->
+                            <img src="img/11.jpg" alt="Mellow and Sleazy" class="src">
+                                <h5>
+                                    Presidente Ya Strata
+                                    <div class="subtitle"> Focalistic</div>
+                                </h5>
+                                <i class="bi playListPlay bi-play-circle-fill" id="2"></i>
+                    </li>
+                    <li class="songItem">
+                        <!-- <span>03</span> -->
+                            <img src="img/16.jpg" alt="Mellow and Sleazy" class="src">
+                                <h5>
+                                    Presidente Ya Strata
+                                    <div class="subtitle"> Focalistic</div>
+                                </h5> 
+                                    <i class="bi playListPlay bi-play-circle-fill" id="3"></i>
+                    </li>
+
+                    <!-- <li class="songItem">
+                        <div class="img_play">
+                            <img src="img/2.jpg" alt="">
+                        </div>
+                        <h5>Unknown Artist<br>
+                            <div class="subtitle">Ling Ling</div>
+                        </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="4"></i>
+                    </li> -->
+            </div>   
+    
+    </div>   
+
+
+
+        <nav class="navHold" id="navHold">
+            <div class="dropdown" id="dropdown">
+                <!-- /////////////////////////////////// -->
+                <div class="dropdown_menu" id="dropdown_menu"> 
+                    <!-- search -->
+                    <div class="search">
+                        <i class="bi bi-search"></i>
+                        <input type="text" placeholder="Search Music...">
+                    </div>
+                     <!-- Filter -->
+                    <div class="filterNavigation">
+                        <li>#LatestDrops<span></span></li>
+                        <li>#Top10<span></span></li>
+                        <li>#SupriseMe<span></span></li>
+                    </div>
+                    <div class="underLineTopBottom" id="underLineTopBottom"></div>
+                    <!-- <div class="underLine"></div> -->
+                     <!-- ul -->
+                    <ul>
+                        <li><i class="bi bi-people-fill"></i><span>About Us</span></li>
+                        <li><i class="bi bi-emoji-laughing-fill"></i><span>Get in Touch</span></li>
+                        <li><i class="bi bi-filter-circle-fill"></i><span>Contact Us</span></li>
+                    </ul>
+
+                    <div class="underLineTopBottom"></div>
+                    
+                    <div class="exploreExclusives"> 
+                         <!-- <div class="exploreTitle">
+                            <span>Explore <br>Exclusives</span>
+                         </div> -->
+                         <div class="exploreContents">
+
+                         </div>
+                         <div class="exploreBenefit">
+                            <!-- <div class="underLineBenefit"></div> -->
+                            <span>Approved in 48hrs</span>
+                            <!-- <div class="underLineBenefit"></div> -->
+                         </div>
+                        <div class="Buttons">
+                            <button>Get Featured</button>
+                        </div>
+                    </div>   
+                
+                             <!-- Buttons -->
+                            <!-- <div class="user">
+                            <img src="img/KDS CODER.png" alt="">
+                            </div> -->
+                </div>
+                <!-- /////////////////////////////////// -->
+            </div>
+
+
+
+            <div class="navVisibleBtns" id="navVisibleBtns">
+                <i class="bi bi-caret-down-fill" id="btnDropDown"></i> 
+                <i class="bi bi-search" id="navSearch"></i>
+            </div>
+            <!-- <i class="bi bi-magic" id="navMagicWand"></i> -->
+                <a href="http://127.0.0.1:5500/welcome.html#6">
+                    <img class="logo_m" src="img/pd_logo.svg" alt="">
+                    <span></span>
+                </a>
+        </nav>
+
+        <div class="searchWrap" id="searchWrap">
+            <div class="searchResultsCard">
+                 <div class="searchFor">
+                     <span>
+                         Search <br> For . . . 
+                     </span>
+                 </div>
+             
+                 <div class="searchProperties">
+                     <div class="searchProp_border">
+                         <h6>Song Name</h6>
+                     </div>
+                    <h6>Preview</h6>
+                </div>
+            </div>
+            
+            <div class="search_results"> 
+            </div>    
+                
+        </div>
+                                             <!-- <div class="filterNavigation">
+                                                 <li>Toss<span></span></li>
+                                                 <li>Focalistic<span></span></li>
+                                                 <li>Amaroto<span></span></li>
+                                                 <li>Daliwonga<span></span></li>
+                                                 <li>Focalistic<span></span></li>
+                                                 <li>Amaroto<span></span></li>
+                                             </div> -->
+         
+                 <!-- <a href="" class="card">
+                     <img src="img/1.jpg" alt="">
+
+                         <div class="content">
+                            6ling
+                            <div class="subtitle">
+                                Ling ling
+                            </div>
+
+                            <div class="previewWrap" id="previewWrap" onmouseover="previewPlay()">
+                                <i class="bi bi-soundwave"></i>
+
+                                <span class="stroke"></span>
+                                <span class="stroke"></span>
+                        </div>
+
+                        </div>
+                </a> -->
+                <!-- <i class="bi bi-soundwave"></i> -->
+         
+        
+</div>
+    
+
+<!-- NAVIGATION (CLOSE) //////////////////////////////////////////////////////-->
+
+    
+<!-- MUSICPLAYER //////////////////////////////////////////////////////-->    
+<div class="musicplayerHold">
+    <div class="master_play">
+        <div class="wave" id="wave">
+            <div class="wave1"></div>
+            <div class="wave1"></div>
+            <div class="wave1"></div>
+        </div>
+
+        <img src="img/4.jpg" alt="" id="poster_master_play">
+            <h5 id="title">Defenders of House<br>
+                <div class="subtitle">Oscar Mbo</div>
+            </h5>
+
+        <div class="icon">
+            <!-- <i class="bi bi-repeat"></i> -->
+            <!-- <i class="bi shuffle bi-music-note-beamed">next</i> -->
+            <!-- Back -->
+            <i class="bi bi-skip-start-fill" id="back"></i>
+            <!-- Play -->
+            <i class="bi bi-play-fill" id="masterPlay"></i>
+             <!-- Skip -->
+            <i class="bi bi-skip-end-fill" id="next"></i>
+            <!-- <a href="" download id="download_music"><i class="bi bi-cloud-arrow-down-fill"></i></a> -->
+        </div>
+
+        <span id="currentStart">0:00</span>
+        <div class="bar">
+            <input type="range" id="seek" min="0" max="100">
+            <div class="bar2" id="bar2"></div>
+            <div class="dot"></div>
+        </div>
+
+        <span id="currentEnd">0:30</span>
+
+        <div class="vol">
+            <i class="bi bi-volume-up-fill" id="vol_icon"></i>
+            <input type="range" min="0" max="100" id="vol">
+            <div class="vol_bar"></div>
+            <div class="dot" id="vol_dot"></div>
+        </div>
+    </div>
+</div>
+<!-- MUSICPLAYER (CLOSE)//////////////////////////////////////////////////////-->    
+
+
+<header>
+<!-- DESKTOP SIDE //////////////////////////////////////////////////////-->    
+
+        <!-- menue under img --> 
+        
+        <!-- <div class="playlist">
+            <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i> Playlist</h4>
+            <h4 ><span></span><i class="bi bi-music-note-beamed"></i> Last Listened</h4>
+        </div> -->
+   
+ 
+<!-- TOP 10 /////////////////////////////////////////////////////////////-->  
+        <div class="song_side">
+            <div class="Top10">
+                
+                <div class="h4">
+                    <h4>Trending Exclusives</h4>
+                    <!-- <button class="exploreBtn">Explore</button> -->
+                    <div class="btn_s">
+                        <i class="bi bi-arrow-left-short" id="pop_song_left"></i>
+                        <i class="bi bi-arrow-right-short" id="pop_song_right"></i>
+                    </div>
+                </div>
+
+                <div class="gradientColorFade"></div>
+
+                <div class="pop_song">
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="img/2.jpg" alt="">
+                        </div>
+                        <h5>Unknown Artist<br>
+                            <div class="subtitle">Ling Ling</div>
+                        </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="4"></i>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="img/2.jpg" alt="">
+                        </div>
+                        <h5>On My Way<br>
+                            <div class="subtitle">Alan Walker</div>
+                        </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="5"></i>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="img/2.jpg" alt="">
+                        </div>
+                        <h5>On My Way<br>
+                            <div class="subtitle">Alan Walker</div>
+                        </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="6"></i>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="img/2.jpg" alt="">
+                        </div>
+                        <h5>On My Way<br>
+                            <div class="subtitle">Alan Walker</div>
+                        </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="img/2.jpg" alt="">
+                        </div>
+                        <h5>On My Way<br>
+                            <div class="subtitle">Alan Walker</div>
+                        </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="8"></i>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="img/2.jpg" alt="">
+                        </div>
+                        <h5>On My Way<br>
+                            <div class="subtitle">Alan Walker</div>
+                        </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="9"></i>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="img/2.jpg" alt="">
+                        </div>
+                        <h5>On My Way<br>
+                            <div class="subtitle">Alan Walker</div>
+                        </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="10"></i>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="img/2.jpg" alt="">
+                        </div>
+                        <h5>On My Way<br>
+                            <div class="subtitle">Alan Walker</div>
+                        </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="11"></i>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="img/2.jpg" alt="">
+                        </div>
+                        <h5>On My Way<br>
+                            <div class="subtitle">Alan Walker</div>
+                        </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="12"></i>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="img/2.jpg" alt="">
+                        </div>
+                        <h5>On My Way<br>
+                            <div class="subtitle">Alan Walker</div>
+                        </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="13"></i>
+                    </li>
+
+                </div>
+            </div>
+     
+            <div class="gradientColorFade"></div>
+
+            <!-- <div class="widgetHold">
+                <button class="info_widget">
+                    <img src="img/zanzou_musa_keys.jpg" alt="Oscar Mbo">    
+                </button> 
+                <button class="info_widget">
+                    <img src="https://pianodeskbucket.s3.eu-west-2.amazonaws.com/PianoDesk.png" alt="Oscar Mbo">    
+                </button>
+            </div> -->
+            
+        </div>
+   
+<!-- LATEST DROP ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->         
+<div class="Latest_drops">
+    <div class="h4">
+            <h4>Top 10</h4>
+            <div class="btn_s">
+                <i id="latest_song_left" class="bi bi-arrow-left-short"></i>
+                <i id="latest_song_right" class="bi bi-arrow-right-short"></i>
+            </div>
+    </div> 
+
+    
+    <div class="gradientColorFade"></div>
+
+    <div class="pop_latest">
+        <li class="songItem">
+            <div class="img_Play">
+                <img src="img/20.jpg" alt="Oscar Mbo">
+            </div>
+            <h5>Falli
+                <br>
+                <div class="subtitle">Oscar Mbo</div>
+            </h5>
+            <i class="bi playListPlay bi-play-circle-fill" id="14"></i>
+        </li>
+
+        <!-- <li class="songItem">
+            <div class="img_play">
+                <img src="img/2.jpg" alt="">
+            </div>
+            <h5>On My Way<br>
+                <div class="subtitle">Alan Walker</div>
+            </h5>
+            <i class="bi playListPlay bi-play-circle-fill" id="13"></i>
+        </li> -->
+
+        <li class="songItem">
+            <div class="img_Play">
+                <img src="img/19.jpg" alt="Oscar Mbo">
+                <i class="bi playListPlay bi-play-circle-fill" id="15"></i>
+            </div>
+            <h5>Fallin
+                <br>
+                <div class="subtitle">Oscar Mbo</div>
+            </h5>
+        </li> <li class="songItem">
+            <div class="img_Play">
+                <img src="img/18.jpg" alt="Oscar Mbo">
+                <i class="bi playListPlay bi-play-circle-fill" id="16"></i>
+            </div>
+            <h5>Fallin
+                <br>
+                <div class="subtitle">Oscar Mbo</div>
+            </h5>
+        </li> <li class="songItem">
+            <div class="img_Play">
+                <img src="img/17.jpg" alt="Oscar Mbo">
+                <i class="bi playListPlay bi-play-circle-fill" id="17"></i>
+            </div>
+            <h5>Fallin
+                <br>
+                <div class="subtitle">Oscar Mbo</div>
+            </h5>
+        </li> <li class="songItem">
+            <div class="img_Play">
+                <img src="img/16.jpg" alt="Oscar Mbo">
+                <i class="bi playListPlay bi-play-circle-fill" id="18"></i>
+            </div>
+            <h5>Fallin
+                <br>
+                <div class="subtitle">Oscar Mbo</div>
+            </h5>
+        </li> <li class="songItem">
+            <div class="img_Play">
+                <img src="img/15.jpg" alt="Oscar Mbo">
+                <i class="bi playListPlay bi-play-circle-fill" id="19"></i>
+            </div>
+            <h5>Fallin
+                <br>
+                <div class="subtitle">Oscar Mbo</div>
+            </h5>
+        </li> <li class="songItem">
+            <div class="img_Play">
+                <img src="img/14.jpg" alt="Oscar Mbo">
+                <i class="bi playListPlay bi-play-circle-fill" id="20"></i>
+            </div>
+            <h5>Fallin
+                <br>
+                <div class="subtitle">Oscar Mbo</div>
+            </h5>
+        </li> <li class="songItem">
+            <div class="img_Play">
+                <img src="img/13.jpg" alt="Oscar Mbo">
+                <i class="bi playListPlay bi-play-circle-fill" id="21"></i>
+            </div>
+            <h5>Fallin
+                <br>
+                <div class="subtitle">Oscar Mbo</div>
+            </h5>
+        </li> 
+        <li class="songItem">
+            <div class="img_Play">
+                <img src="img/12.jpg" alt="Oscar Mbo">
+                <i class="bi playListPlay bi-play-circle-fill" id="22"></i>
+            </div>
+            <h5>Fallin
+                <br>
+                <div class="subtitle">Oscar Mbo</div>
+            </h5>
+        </li> <li class="songItem">
+            <div class="img_Play">
+                <img src="img/14.jpg" alt="Oscar Mbo">
+                <i class="bi playListPlay bi-play-circle-fill" id="23"></i>
+            </div>
+            <h5>Fallin
+                <br>
+                <div class="subtitle">Oscar Mbo</div>
+            </h5>
+        </li>
+    </div>  
+</div>
+
+
+<!--  FEATURED ARTISTS ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->         
+<div class="featuredArtists">
+    <div class="h4">
+            <h4>Featured Artists</h4>
+            <div class="btn_s">
+                <i id="featured_artist_left" class="bi bi-arrow-left-short"></i>
+                <i id="featured_artist_right" class="bi bi-arrow-right-short"></i>
+            </div>
+    </div> 
+
+    <div class="gradientColorFade"></div>
+
+    <div class="pop_featured">
+        <li class="featureArtist">
+            <div class="img_Play">
+                <img src="img/13.jpg" alt="Oscar Mbo">
+                <i class="bi playListPlay bi-play-circle-fill" id="24"></i>
+            </div>
+        </li>
+        <li class="featureArtist">
+            <div class="img_Play">
+                <img src="img/12.jpg" alt="Oscar Mbo">
+                <i class="bi playListPlay bi-play-circle-fill" id="25"></i>
+            </div>
+        </li> 
+        <li class="featureArtist">
+            <div class="img_Play">
+                <img src="img/11.jpg" alt="Oscar Mbo">
+                <i class="bi playListPlay bi-play-circle-fill" id="26"></i>
+            </div>
+        </li> 
+        <li class="featureArtist">
+            <div class="img_Play">
+                <img src="img/10.jpg" alt="Oscar Mbo">
+                <i class="bi playListPlay bi-play-circle-fill" id="27"></i>
+            </div>
+        </li> 
+        <li class="featureArtist">
+            <div class="img_Play">
+                <img src="img/9.jpg" alt="Oscar Mbo">
+                <i class="bi playListPlay bi-play-circle-fill" id="28"></i>
+            </div>
+        </li> 
+        <li class="featureArtist">
+            <div class="img_Play">
+                <img src="img/8.jpg" alt="Oscar Mbo">
+                <i class="bi playListPlay bi-play-circle-fill" id="29"></i>
+            </div>
+        </li> 
+        <li class="featureArtist">
+            <div class="img_Play">
+                <img src="img/7.jpg" alt="Oscar Mbo">
+                <i class="bi playListPlay bi-play-circle-fill" id="30"></i>
+            </div>
+        </li> 
+        <li class="featureArtist">
+            <div class="img_Play">
+                <img src="img/6.jpg" alt="Oscar Mbo">
+                <i class="bi playListPlay bi-play-circle-fill" id="31"></i>
+            </div>
+        </li> 
+        <li class="featureArtist">
+            <div class="img_Play">
+                <img src="img/5.jpg" alt="Oscar Mbo">
+                <i class="bi playListPlay bi-play-circle-fill" id="32"></i>
+            </div>
+        </li> 
+        <li class="featureArtist">
+            <div class="img_Play">
+                <img src="img/4.jpg" alt="Oscar Mbo">
+                <i class="bi playListPlay bi-play-circle-fill" id="33"></i>
+            </div>
+        </li>
+        <li class="featureArtist">
+            <div class="img_Play">
+                <img src="img/3.jpg" alt="Oscar Mbo">
+                <i class="bi playListPlay bi-play-circle-fill" id="34"></i>
+            </div>
+        </li>
+        <li class="featureArtist">
+            <div class="img_Play">
+                <img src="img/2.jpg" alt="Oscar Mbo">
+                <i class="bi playListPlay bi-play-circle-fill" id="35"></i>
+            </div>
+        </li>
+        <li class="featureArtist">
+            <div class="img_Play">
+                <img src="img/1.jpg" alt="Oscar Mbo">
+                <i class="bi playListPlay bi-play-circle-fill" id="36"></i>
+            </div>
+        </li>
+        <li class="featureArtist">
+            <div class="img_Play">
+                <img src="img/20.jpg" alt="Oscar Mbo">
+                <i class="bi playListPlay bi-play-circle-fill" id="37"></i>
+            </div>
+        </li>
+        <li class="featureArtist">
+            <div class="img_Play">
+                <img src="img/19.jpg" alt="Oscar Mbo">
+                <i class="bi playListPlay bi-play-circle-fill" id="38"></i>
+            </div>
+        </li>
+        <li class="featureArtist">
+            <div class="img_Play">
+                <img src="img/18.jpg" alt="Oscar Mbo">
+                <i class="bi playListPlay bi-play-circle-fill" id="39"></i>
+            </div>
+        </li>
+        <li class="featureArtist">
+            <div class="img_Play">
+                <img src="img/17.jpg" alt="Oscar Mbo">
+                <i class="bi playListPlay bi-play-circle-fill" id="40"></i>
+            </div>
+        </li>
+        <li class="featureArtist">
+            <div class="img_Play">
+                <img src="img/16.jpg" alt="Oscar Mbo">
+                <i class="bi playListPlay bi-play-circle-fill" id="41"></i>
+            </div>
+        </li>
+       
+    </div>
+</div>    
+
+<!--  COMING UP ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->    
+<div class="coming_up">
+    <div class="h4">
+            <h4>Coming Up</h4>
+            <div class="btn_s">
+                <i id="coming_up_left" class="bi bi-arrow-left-short"></i>
+                <i id="coming_up_right" class="bi bi-arrow-right-short"></i>
+            </div>
+    </div> 
+    
+    <div class="gradientColorFade"></div>
+
+    <div class="pop_coming_up">
+        <li class="songItem">
+            <div class="img_play">
+                <img src="img/7.jpg" alt="Oscar Mbo">
+                <i class="bi playListPlay bi-play-circle-fill" id="42"></i>
+            </div>
+            <h5>Fallin
+                <br>
+                <div class="subtitle">Oscar Mbo</div>
+            </h5>
+        </li>
+        <li class="songItem">
+            <div class="img_play">
+                <img src="img/6.jpg" alt="Oscar Mbo">
+                <i class="bi playListPlay bi-play-circle-fill" id="43"></i>
+            </div>
+            <h5>Fallin
+                <br>
+                <div class="subtitle">Oscar Mbo</div>
+            </h5>
+        </li> <li class="songItem">
+            <div class="img_play">
+                <img src="img/5.jpg" alt="Oscar Mbo">
+                <i class="bi playListPlay bi-play-circle-fill" id="44"></i>
+            </div>
+            <h5>Fallin
+                <br>
+                <div class="subtitle">Oscar Mbo</div>
+            </h5>
+        </li> <li class="songItem">
+            <div class="img_play">
+                <img src="img/4.jpg" alt="Oscar Mbo">
+                <i class="bi playListPlay bi-play-circle-fill" id="45"></i>
+            </div>
+            <h5>Fallin
+                <br>
+                <div class="subtitle">Oscar Mbo</div>
+            </h5>
+        </li> <li class="songItem">
+            <div class="img_play">
+                <img src="img/3.jpg" alt="Oscar Mbo">
+                <i class="bi playListPlay bi-play-circle-fill" id="46"></i>
+            </div>
+            <h5>Fallin
+                <br>
+                <div class="subtitle">Oscar Mbo</div>
+            </h5>
+        </li> <li class="songItem">
+            <div class="img_play">
+                <img src="img/2.jpg" alt="Oscar Mbo"> 
+                <i class="bi playListPlay bi-play-circle-fill" id="47"></i>
+            </div>
+            <h5>Fallin
+                <br>
+                <div class="subtitle">Oscar Mbo</div>
+            </h5>
+        </li> <li class="songItem">
+            <div class="img_play">
+                <img src="img/1.jpg" alt="Oscar Mbo">
+                <i class="bi playListPlay bi-play-circle-fill" id="48"></i>
+            </div>
+            <h5>Fallin
+                <br>
+                <div class="subtitle">Oscar Mbo</div>
+            </h5>
+        </li> <li class="songItem">
+            <div class="img_play">
+                <img src="img/20.jpg" alt="Oscar Mbo">
+                <i class="bi playListPlay bi-play-circle-fill" id="49"></i>
+            </div>
+            <h5>Fallin
+                <br>
+                <div class="subtitle">Oscar Mbo</div>
+            </h5>
+        </li> <li class="songItem">
+            <div class="img_play">
+                <img src="img/19.jpg" alt="Oscar Mbo">
+                <i class="bi playListPlay bi-play-circle-fill" id="50"></i>
+            </div>
+            <h5>Fallin
+                <br>
+                <div class="subtitle">Oscar Mbo</div>
+            </h5>
+        </li> <li class="songItem">
+            <div class="img_play">
+                <img src="img/18.jpg" alt="Oscar Mbo">
+                <i class="bi playListPlay bi-play-circle-fill" id="51"></i>
+            </div>
+            <h5>Fallin
+                <br>
+                <div class="subtitle">Oscar Mbo</div>
+            </h5>
+        </li>
+    </div>  
+
+    <div class="spaceBottom"></div>
+</div>
+
+<div class="footer">
+    <div class="hLinks">
+        <div class="linkTree">
+            <a href="#">About</a>
+            <a href="#">Get in Touch</a>
+            <a href="#"><img src="img/pd_logo.svg" width="45px" alt="Pinao Desk">
+                <div class="pianoDeskWrap">
+                    <span>Piano<br>Desk</span>
+                </div>
+            </a>
+        </div>
+        <div class="linkTree">
+            <a href="#" class= "footerActive">Get Featured</a> 
+            <a href="#">How to?</a>
+            <a href="#">Featured Artists</a>
+        </div>
+        <div class="linkTree">
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookie Policy</a>
+        </div>
+    </div>
+
+    <div class="copyRight">
+        <span>ⓒ2022. Home of Piano Desk (Piano Desk (LTD))</span>
+    </div>
+</div>
+
+    
+    <script src="app.js"></script>
+    <script>
+    let menu_list_active_button = document.getElementById('menu_list_active_button');
+    let menu_side = document.getElementsByClassName('menu_side')[0];
+    
+    
+    let song_side = document.getElementsByClassName('song_side')[0];
+    
+    
+    let xm = window.matchMedia("(max-width: 930px)");
+    
+    menu_list_active_button.addEventListener('click', () => {
+        if (xm.matches) { 
+            menu_side.style.transform = "unset";
+            menu_list_active_button.style.opacity = 0;
+        } 
+    })
+    
+    song_side.addEventListener('click', () => {
+        if (xm.matches) {      
+            menu_side.style.transform = "translateX(-100%)";
+            menu_list_active_button.style.opacity = 1;
+        }
+    })
+    </script>
+
+
+</header>
+</body>
+  
+
+</html>
